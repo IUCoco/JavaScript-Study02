@@ -73,4 +73,19 @@ Event.observe(window,"load",myFunction);
 Event.observe() 接受三个参数：  
 您希望处理的 HTML DOM 或 BOM（浏览器对象模型）对象  
 您希望处理的事件  
-您希望调用的函数  
+您希望调用的函数  
+#### 一些 DOM 对象方法  
+这里提供一些您将在本教程中学到的常用方法：  
+方法	描述  
+getElementById()	返回带有指定 ID 的元素。  
+getElementsByTagName()	返回包含带有指定标签名称的所有元素的节点列表（集合/节点数组）。  
+getElementsByClassName()	返回包含带有指定类名的所有元素的节点列表。  
+appendChild()	把新的子节点添加到指定节点。  
+removeChild()	删除子节点。  
+replaceChild()	替换子节点。  
+insertBefore()	在指定的子节点前面插入新的子节点。  
+createAttribute()	创建属性节点。  
+createElement()	创建元素节点。  
+createTextNode()	创建文本节点。  
+getAttribute()	返回指定的属性值。  
+setAttribute()	把指定属性设置或修改为指定的值。  
