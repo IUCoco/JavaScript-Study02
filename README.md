@@ -7,7 +7,7 @@ HTML 中的脚本必须位于 `<script>` 与 `</script>` 标签之间。
 #### jQuery 描述
 主要的 jQuery 函数是 $() 函数（jQuery 函数）。如果您向该函数传递 DOM 对象，它会返回 jQuery 对象，带有向其添加的 jQuery 功能。
 jQuery 允许您通过 CSS 选择器来选取元素。
-在 JavaScript 中，您可以分配一个函数以处理窗口加载事件：
+在 JavaScript 中，您可以分配一个函数以处理窗口加载事件：  
 JavaScript 方式：  
 ```
 function myFunction()
@@ -17,7 +17,9 @@ obj.innerHTML="Hello jQuery";
 }
 onload=myFunction;
 等价的 jQuery 是不同的：
-jQuery 方式：
+```  
+jQuery 方式：  
+```
 function myFunction()
 {
 $("#h01").html("Hello jQuery");
