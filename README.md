@@ -48,10 +48,10 @@ jQuery 函数会返回新的 jQuery 对象，其中的 `ready()` 是一个方法
 ```  
 Prototype 描述  
 Prototype 提供的函数可使 HTML DOM 编程更容易。
-与 jQuery 类似，Prototype 也有自己的 $() 函数。
-$() 函数接受 HTML DOM 元素的 id 值（或 DOM 元素），并会向 DOM 对象添加新的功能。
-与 jQuery 不同，Prototype 没有用以取代 window.onload() 的 ready() 方法。相反，Prototype 会向浏览器及 HTML DOM 添加扩展。
-在 JavaScript 中，您可以分配一个函数以处理窗口加载事件：
+与 jQuery 类似，Prototype 也有自己的 `$()` 函数。
+`$()` 函数接受 HTML DOM 元素的 `id `值（或 `DOM` 元素），并会向 `DOM `对象添加新的功能。
+与 jQuery 不同，Prototype 没有用以取代` window.onload()` 的 `ready()` 方法。相反，Prototype 会向浏览器及 HTML DOM 添加扩展。
+在 JavaScript 中，您可以分配一个函数以处理窗口加载事件：  
 JavaScript 方式：  
 ```
 function myFunction()
@@ -60,15 +60,17 @@ var obj=document.getElementById("h01");
 obj.innerHTML="Hello Prototype";
 }
 onload=myFunction;
-
-等价的 Prototype 是不同的：
-Prototype 方式：
+```  
+等价的 Prototype 是不同的：  
+Prototype 方式：  
+```  
 function myFunction()
 {
 $("h01").insert("Hello Prototype!");
 }
 Event.observe(window,"load",myFunction);
-Event.observe() 接受三个参数：
-您希望处理的 HTML DOM 或 BOM（浏览器对象模型）对象
-您希望处理的事件
-您希望调用的函数
+```  
+Event.observe() 接受三个参数：  
+您希望处理的 HTML DOM 或 BOM（浏览器对象模型）对象  
+您希望处理的事件  
+您希望调用的函数  
